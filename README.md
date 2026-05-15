@@ -1,11 +1,11 @@
 # nginx-statshouse-module build
 
 Builds the VKCOM statshouse nginx module against a specific nginx version and
-produces a Debian 12 compatible `.so` artifact.
+produces a Debian 13 compatible `.so` artifact.
 
 ## Local build
 
-Dependencies (Debian 12):
+Dependencies
 
 ```
 sudo apt-get update
