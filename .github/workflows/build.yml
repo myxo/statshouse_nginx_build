@@ -15,7 +15,7 @@ jobs:
   build:
     name: build-${{ matrix.arch }}
     runs-on: ${{ matrix.runs_on }}
-    container: debian:12
+    container: debian:13
     strategy:
       fail-fast: false
       matrix:
@@ -39,8 +39,6 @@ jobs:
           rm -rf /var/lib/apt/lists/*
       - uses: actions/checkout@v4
       - name: build-module
-        env:
-          NGINX_VERSION: "1.29.4"
         run: |
           bash ./build.sh
       - uses: actions/upload-artifact@v4

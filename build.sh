@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(pwd -P)"
-NGINX_VERSION="${NGINX_VERSION:-1.29.4}"
+NGINX_VERSION="${NGINX_VERSION:-1.31.0}"
 MODULE_REPO="${MODULE_REPO:-https://github.com/VKCOM/nginx-statshouse-module.git}"
 MODULE_REF="${MODULE_REF:-}"
 OUT_DIR="${OUT_DIR:-dist}"
